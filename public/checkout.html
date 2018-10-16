@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale = 1">
+	
+	<!-- Bootstrap -->
+	<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel = "stylesheet" type = "text/css" href = "vender/simple-line-icons/css/simple-line-icons.css">
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel = "stylesheet" href = "css/jquery.datetimepicker.min.css">
+	<link rel = "stylesheet" href = "css/navi.css">
+	<link rel = "stylesheet" href = "css/footer.css">
+	<link rel = "stylesheet" href = "css/loader.css">
+	<link rel = "stylesheet" href = "css/checkout.css">
+	
+	
+	<!-- Jquery -->
+	<!-- <script src = "/modules/jquery-3.3.1.min.js"></script> -->
+	<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src = "modules/jquery.datetimepicker.full.js"></script> 
+	<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+	<script src = "modules/navi.js"></script>
+	<script src = "modules/callendar.js"></script>
+	<script src = "modules/controller.js"></script>
+	
+	
+</head>
+<body class="preloader" data-gr-c-s-loaded="true">
+	<div id="loader">
+		<img src = "img/preloader.gif">
+	</div>
+	<script>
+	jQuery(document).ready(function(){
+		$(window).load(function(){
+ 			$('#loader').fadeOut('slow', function(){
+ 				$(this).remove();
+ 			});
+		});
+	});
+	</script>
+	
+	<!-- navigation -->
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<!-- bootstrap의 상단 고정 navigation bar -->
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" style = "outline : none;">
+					<!-- 창의 크기가 달라졌을 때 toggle버튼이 생성되도록 하는 class -->
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Fre Trip</a></div>
+			<div class="collapse navbar-collapse" id="defaultNavbar1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a class = "action1" href="price.html">가격정책
+							<span class="sr-only">(current)</span></a>
+					</li>
+					<li><a class = "action2" href="checkout.html">예 약</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">테 마<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<!-- dropdown의 형식을 나타낼 수 있는 bootstrap의 구조 -->
+							<li><a href="#">스포츠</a></li>
+							<li><a href="thema1.html">레 저</a></li>
+							<li><a href="#">관광지</a></li>
+							<li><a href="#">음 식</a></li>
+							<li class="divider"></li>
+							<li><a href="#">추천 가이드</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href = "login.html">
+						<span class = "glyphicon glyphicon-log-in"></span>
+						<!-- bootstrap에 내장되어 있는 glyphicon을 이용할 수 있는 class -->
+						로그인</a></li>
+					<li><a href = "signup.html">
+						<span class = "glyphicon glyphicon-user"></span>
+						회원가입</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<section id = "thema_main_image">
+		<div class = "container thema_main_texts">
+			<div class = "text1">예약 정보를 잘 확인하고 예약해주세요</div><br>
+			<div class = "text2">도움 영상을 참고하세요</div>
+		</div>
+	</section>
+	
+	<main>
+		<div class = "container_checkout">
+			<div class = "form-wrap-left">
+				<div class = "form-group first_section">
+					<div class = "section_title">
+						성
+					</div>
+					<div class = "form-group">
+						<input type = "text" class = "form-control" name = "firstname" placeholder = "First Name" autocomplete = "off">
+					</div>
+				</div>
+				<div class = "form-group first_section">
+					<div class = "section_title">
+						이름
+					</div>
+					<div class = "form-group">
+						<input type = "text" class = "form-control" name = "secondname" placeholder = "Second Name" autocomplete = "off">
+					</div>
+				</div>
+				<div class = "form-group second_section">
+					<div class = "section_title">
+						이메일
+					</div>
+					<div class = "form-group">
+						<input type = "text" class = "form-control" name = "email" placeholder = "Email" autocomplete = "off">
+						<button id = "confirm" class = "btn btn-success btn-lg btn-block" type = "button">
+							인증받기
+						</button>
+						<input type = "text" class = "form-control" name = "confirm" placeholder = "인증번호 입력" autocomplete = "off">
+					</div>
+				</div>
+				
+					<hr class = "divided">
+				
+				<div class = "form-group first_section">
+					<div class = "section_title">
+						여권사진
+					</div>
+					<div class = "form-group">
+						<input type = "file" class = "form-control" name = "passport">
+					</div>
+				</div>
+				<div class = "form-group first_section">
+					<div class = "section_title">
+						비행기 티켓 사진
+					</div>
+					<div class = "form-group">
+						<input type = "file" class = "form-control" name = "ticket">
+					</div>
+				</div>	
+				<div class = "section_title">
+						날짜
+				</div>
+				
+				<div class = "form-group callendar_section">
+					<div class = "callendar_title">
+						From
+					</div>
+					<div class = "form-group">
+						<input id = "date_from" type = "text" >
+					</div>
+				</div>
+				<div class = "form-group callendar_section">
+					<div class = "callendar_title">
+						To
+					</div>
+					<div class = "form-group">
+						<input id = "date_to" type = "text">
+					</div>
+				</div>
+				
+				<div class = "form-group first_section">
+					<div class = "section_title">
+						가이드 이름
+					</div>
+					<select name = "guides">
+						<option value = "none">None</option>
+						<option value = "ironman">Iron Man</option>
+						<option value = "captainamerica">Captain America</option>
+						<option value = "blackwidow">Black Widow</option>
+					</select>
+				</div>
+				<div class = "form-group first_section">
+					<div class = "section_title">
+						예약사항
+					</div>
+					<select name = "booking">
+						<option value = "free">Free</option>
+						<option value = "platinum">Platinum</option>
+						<option value = "premium">Premium</option>
+					</select>
+				</div>
+				<div class = "form-group first_section">
+					<div class = "section_title">
+						렌트카 예약
+					</div>
+					<select name = "rentcar">
+						<option value = "yes">Yes</option>
+						<option value = "no">No</option>
+					</select>
+				</div>
+				<div class = "form-group first_section">
+					<div class = "section_title">
+						숙소 예약
+					</div>
+					<select name = "hotel">
+						<option value = "yes">Yes</option>
+						<option value = "no">No</option>
+					</select>
+				</div>
+				<div class = "reservation_relation">
+					<div class = "relation">예약을 하지 않았다면?</div>
+					<div class = "sub_relation">
+						<span class = "relation_title">직접 예약하기</span>
+						<span class = "find_relation"><a href = "#">Trivago &nbsp;</a></span>
+						<span class = "find_relation"><a href = "#">&nbsp; Lotte Rentcar</a></span>
+					</div>
+				</div>
+				
+				<div class = "form-group first_section">
+					<div class = "section_title">
+						가이드에게 일임 여부
+					</div>
+					<select name = "ask">
+						<option value = "yes">Yes</option>
+						<option value = "no">No</option>
+					</select>
+				</div>
+				<div class = "form-group textarea">
+					<textarea rows="5" cols="60" name="comment" form="usrform">Anything else....</textarea>
+				</div>
+				<div class = "text_submit">
+					<input type = "submit" class = "btn btn-primary btn-lg btn-block">
+				</div>
+			</div>
+		
+			<div class = "form-wrap-right">
+
+				<banner>
+				<div class = "slide">
+                    <button class = "prev" type = "button">
+                        <img src = "img/prev.png">
+                    </button>
+					
+                    <ul>
+                        <li><a href = "#"><img src="img/hotels.jpg"></a></li>
+                        <li><a href = "#"><img src="img/lotte.jpg"></a></li>
+                        <li><a href = "#"><img src="img/trivago.png"></a></li>
+                    </ul>
+					
+                    <button class = "next" type ="button">
+                        <img src = "img/next.png">
+                    </button>
+                </div>
+            	</banner>
+				
+				<div class="embed-responsive embed-responsive-16by9">
+  					<iframe class="embed-responsive-item" src = "https://www.youtube.com/embed/TUQwonNgFDQ" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</main>		  
+			  
+	
+	<!-- footer -->
+	<footer class = "footer_desktop">
+		<div class = "footer_top container">
+			<div class = "footer_top_left">
+				<a class = "footer-agreements" target = "_blank" href = "#">이용약관</a>
+				<a class = "footer-privacy" target = "_black" href = "#">개인정보처리방침</a>
+			</div>
+		</div>
+		
+		<div class = "footer_divider"></div>
+		
+		<div class = "footer_bottom container">
+			<div class = "footer_bottom_left">
+				<a href = "#" target = "_blank">
+				<img class = "footer-fretrip-signature" src = "img/logo.gif" alt = "FreTrip"></a>
+					
+				<div class = "footer-fretrip-info">
+					<div>
+						<span>상호 : </span>
+						<span>(주)FreTrip</span>&nbsp;&nbsp;&nbsp;&nbsp;
+						<span>대표 : </span>
+						<span>조 현 재</span>&nbsp;&nbsp;&nbsp;&nbsp;
+						<span>개인정보보호책임자 : </span>
+						<span>유 승 훈</span>
+					</div>
+					<div>
+						<span>서울 특별시 </span>
+						<span>광진구 </span>
+						<span>군자동 </span>
+						<span>116-9 </span> 
+						<span>FreTrip Ent</span>
+					</div>
+					<div>
+						<span>웹프로그래밍 </span>
+						<span>13011178 </span>
+						<span>조 현 재</span>
+					</div>
+					<div>
+						<span>TEL : </span>
+						<span>010-8941-5576 </span>&nbsp;&nbsp;&nbsp;&nbsp;
+						<span>Email : </span>
+						<a href = "#">guswo5580@naver.com</a>
+					</div>	
+				</div>		
+			</div>
+			
+			<div class = "footer_bottom_right">
+				<div class = "footer-fretrip-services">
+					<div class = "footer-fretrip-services_title">
+						FreTrip 서비스
+					</div>
+					
+					<ul class = "footer-fretrip-services_list">
+						<li><a href="#" target="_blank">
+							<img src="img/logo2.gif" ></a></li>
+							
+						<li><a href="#" target="_blank">
+							<img src="img/logo2-1.gif" ></a></li>
+							
+						<li><a href="#" target="_blank">
+								<img src="img/logo2-2.gif"></a></li>
+					</ul>
+				</div>
+				<div class = "footer_rights">
+					ⓒ FreTrip Corp. All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- popup -->
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Popup" style = "z-index : 10000; position : fixed; bottom : 0; right : 30px;
+																												   background-color : #008bf4; height : 50px; font-size : 1.8rem; text-align : center;">
+            	<i class = " fa fa-comments-o" style = "margin-right : 5px;"></i>문의하기
+    </button>
+
+    <div class="modal fade" id="Popup" tabindex="-1" role="dialog" aria-labelledby="ModalTitle"style = "margin-right : 10px;">
+		<div class="modal-dialog" role="contact_us">
+			<div class="modal-content">
+				<div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    	<h3 class="modal-title" id="ModalTitle" style = "padding : 10px; border-bottom : 1px solid gray;">언제든지 연락주세요!</h3>
+					<p style = "margin-top : 20px; line-height : inherit; font-size : 1.5rem">
+						FreTrip은 서비프의 품질 유지를 위해 다양한 환경을 기반으로 지원하고 있습니다. 시간과 장소에 관계없이 페이스북, 이메일로 연락 주십시오. 빠른 시간 내에 처리해 드리겠습니다.
+					</p><br>
+				</div>
+				
+                <div class="modal-body">
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-xs-3 control-label" for="contact_us_title">제목</label>
+							<div class="col-xs-8 input_container">
+								<input type="text" class="form-control" id="contact_us_title" placeholder="제목을 입력">
+							</div>
+						</div>
+						  
+						<div class="form-group loggined">
+							<label class="col-xs-3 control-label" for="contact_us_email" style="white-space: nowrap;">이메일</label>
+							<div class="col-xs-8 input_container">
+							<input type="text" class="form-control" id="contact_us_email" placeholder="이메일">
+						</div>
+				</div>
+							
+					<div class="form-group">
+						<label class="col-xs-3 control-label" for="contact_us_content">내용</label>
+						<div class="col-xs-8 input_container">
+							<textarea class="form-control" id="contact_us_content" placeholder="문의하실 내용" rows="3" style="resize: none;"></textarea>
+						</div>
+					</div>
+						
+					<div class="modal-footer">
+                    	<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    	<button type="button" class="btn btn-primary">보내기</button>
+                  	</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>		
+</body>
+</html>

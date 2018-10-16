@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale = 1">
+	
+	<!-- Bootstrap -->
+	<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel = "stylesheet" type = "text/css" href = "/vender/simple-line-icons/css/simple-line-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel = "stylesheet" href = "/css/navi.css">
+	<link rel = "stylesheet" href = "/css/carousel.css">
+	<link rel = "stylesheet" href = "/css/icon.css">
+	<link rel = "stylesheet" href = "/css/information.css">
+	<link rel = "stylesheet" href = "/css/framework.css">
+	<link rel = "stylesheet" href = "/css/footer.css">
+	<link rel = "stylesheet" href = "/css/loader.css">
+	
+	<!-- Jquery -->
+	<script src = "/modules/jquery-3.3.1.min.js"></script>
+	<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src = "/modules/navi.js"></script>
+
+</head>
+<body>
+	<div id="loader">
+		<img src = "/img/preloader.gif">
+	</div>
+	<script>
+	jQuery(document).ready(function(){
+		$(window).load(function(){
+ 			$('#loader').fadeOut('slow', function(){
+ 				$(this).remove();
+ 			});
+		});
+	});
+	</script>
+	<!-- navigation -->
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<!-- bootstrap의 상단 고정 navigation bar -->
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" style = "outline : none;">
+					<!-- 창의 크기가 달라졌을 때 toggle버튼이 생성되도록 하는 class -->
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/views/index.html">Brand Name</a></div>
+			<div class="collapse navbar-collapse" id="defaultNavbar1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a class = "action1" href="/views/price.html">가격정책
+							<span class="sr-only">(current)</span></a>
+					</li>
+					<li><a class = "action2" href="/views/checkout.html">예 약</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">테 마<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<!-- dropdown의 형식을 나타낼 수 있는 bootstrap의 구조 -->
+							<li><a href="#">스포츠</a></li>
+							<li><a href="/views/thema1.html">레 저</a></li>
+							<li><a href="#">관광지</a></li>
+							<li><a href="#">음 식</a></li>
+							<li class="divider"></li>
+							<li><a href="#">추천 가이드</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href = "/views/login.html">
+						<span class = "glyphicon glyphicon-log-in"></span>
+						<!-- bootstrap에 내장되어 있는 glyphicon을 이용할 수 있는 class -->
+						로그인</a></li>
+					<li><a href = "/views/signup.html">
+						<span class = "glyphicon glyphicon-user"></span>
+						회원가입</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+ 
+		 <!-- carousel -->
+		<!-- 이미지를 slide할 수 있도록 하는 틀을 만드는 bootstrap class -->
+	<div id="carousel1" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+		<li data-target="#carousel1" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel1" data-slide-to="1"></li>
+		<li data-target="#carousel1" data-slide-to="2"></li>
+		  <!-- 슬라이드 되는 이미지에 따라 data-target으로 find하여 아래의 정보를 가져온다 -->
+	  </ol>
+	  <div class="carousel-inner" role="listbox">
+		<div class="item active"><img src="/img/bg1.jpg" class="center-block">
+		  <div class="carousel-caption">
+			<h2>즐겁고 신선한 여행 FreTrip과 함께하세요!</h2>
+		  </div>
+		</div>
+		<div class="item"><img src="/img/bg2.jpg" class="center-block">
+		  <div class="carousel-caption">
+			<h2>즐겁고 신선한 여행 FreTrip과 함께하세요!</h2>
+		  </div>
+		</div>
+		<div class="item"><img src="/img/bg3.jpg" class="center-block">
+		  <div class="carousel-caption">
+			<h2>즐겁고 신선한 여행 FreTrip과 함께하세요!</h2>
+		  </div>
+		</div>
+	  </div>
+		<!-- bootstrap의 좌, 우 클릭 변환이 가능하도록 하는 버튼기능 삽입 -->
+		<a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+		  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span></a>
+		<a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span></a>
+	</div>
+	
+	<!-- Icon Grid -->
+	<!-- bootstrap에서 icon class를 이용하여 아이콘 및 글을 삽입 -->
+	<!-- mb bg lg 등은 모두 bootstrap에서 제공하는 기능을 담고 있는 class이용방법 -->
+	<section class = "features-icons bg-light text-center">
+		<div class = container>
+			<div class = "row">
+				<div class = "col-lg-4">
+					<div class = "features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+						<div class = "features-icons-icon d-flex">
+							<i class = "icon-screen-desktop m-auto text-primary"></i>
+						</div>
+						<h3>식상한 여행은 그만</h3>
+						<p class = "lead mb-0">
+							원하는 여행 테마를 골라 의사소통이 가능한 현지 가이드와 함께 하세요!
+						</p>
+					</div>
+				</div>
+				<div class = "col-lg-4">
+					<div class = "features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+						<div class = "features-icons-icon d-flex">
+							<i class = "icon-layers m-auto text-primary"></i>
+						</div>
+						<h3>테마를 검색해보세요</h3>
+						<p class = "lead mb-0">
+							예약 페이지를 통해 원하는 테마를 <br>가진 가이드를 골라보세요!
+						</p>
+					</div>
+				</div>
+				<div class = "col-lg-4">
+					<div class = "features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+						<div class = "features-icons-icon d-flex">
+							<i class = "icon-check m-auto text-primary"></i>
+						</div>
+						<h3>새로운 여행을 즐겨보세요</h3>
+						<p class = "lead mb-0">
+							FreTrip이 당신의 즐거운 여행과 <br>함께합니다!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Information -->
+	<!-- 사진과 함께 페이지 이용방법을 제공하는 구조, bootstrap의 테이블 class를 이용 -->
+	<section class="information">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters"  id = "basic">
+        	<div class="col-lg-6 text-white information-img">
+				<img src = "//statics.goorm.io/ide/v/180409/images/main/facilities/facility_01.svg">
+			</div>
+          	<div class="col-lg-6 my-auto information-text">
+            	<h2>원하는 테마 여행을 골라보세요</h2>
+            	<p class="lead mb-0">더 이상 관광지를 돌아다니는 여행이 지겹다면?<br> 
+					그래도 혼자서 여행하는 것이 두렵다면? <br>
+			  		FreTrip은 여러분이 원하는 여행, 그것을 실현시켜드립니다. <br>
+					가장 끌리는 여행 테마를 골라보세요!!
+				</p>
+          	</div>
+        </div>
+		  
+        <div class="row no-gutters" id = "order">
+			<div class="col-lg-6 text-white information-img">
+				<img src = "//statics.goorm.io/ide/v/180409/images/main/facilities/facility_03.svg">
+			</div>
+			<div class="col-lg-6 my-auto information-text2">
+				<h2>테마에 알맞은 가이드를 선택해서 예약하세요</h2>
+				<p class="lead mb-0">지역에 따라 여러분이 선택한 여행 테마에 맞는 가이드들이 있습니다.<br>
+					가이드가 제공하는 여행 정보와 소개 영상 및 글을 확인하세요. <br>
+					이제 가이드를 선택하기만 하면 됩니다.
+				</p>
+			</div>
+		</div>
+		  
+        <div class="row no-gutters" id = "basic">
+        	<div class="col-lg-6 text-white information-img">
+				<img src = "/img/bg4.jpg">
+			</div>
+          	<div class="col-lg-6 my-auto information-text">  
+            	<h2>FreTrip이 여러분의 여행과 함께합니다</h2>
+            	<p class="lead mb-0">
+					소중한 추억을 쌓을 수 있어야 하는 여행<br>
+					FreTrip은 여러분께 자유와 즐거움을 같이 제공합니다.<br>
+					당신의 소중한 추억을 FreTrip과 함께하세요.
+				</p>
+          	</div>
+        </div>
+      </div>
+    </section>
+	
+	<!-- information2 -->
+	<section id = "main_frameworks">
+		<div class = "section_title">
+			지원 가능한 국가/도시
+		</div>
+		<hr class = "line">
+		<div class = "frameworks_wrapper">
+			<div class = "frameworks_country">
+				<div class = "frameworks_country_text">
+					America
+				</div>
+				<div class = "frameworks_background">
+					<img  class = "framework_logo" src = "/img/america.gif">
+					<div class = "framework_name">
+						뉴욕
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img  class = "framework_logo" src = "/img/america.gif">
+					<div class = "framework_name">
+						워싱턴
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img  class = "framework_logo" src = "/img/america.gif">
+					<div class = "framework_name">
+						시카고
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img  class = "framework_logo" src = "/img/america.gif">
+					<div class = "framework_name">
+						LA
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img  class = "framework_logo" src = "/img/america.gif">
+					<div class = "framework_name">
+						마이애미
+					</div>
+				</div>
+			
+				<div class = "frameworks_background">
+					<img  class = "framework_logo" src = "/img/america.gif">
+					<div class = "framework_name">
+						인디애나
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img  class = "framework_logo" src = "/img/america.gif">
+					<div class = "framework_name">
+						캘리포니아
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class = "frameworks_country">
+				<div class = "frameworks_country_text">
+					Korea
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/korea.png">
+					<div class = "framework_name">
+						서울
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/korea.png">
+					<div class = "framework_name">
+						부산
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/korea.png">
+					<div class = "framework_name">
+						충청도
+					</div>
+				</div>
+			
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/korea.png">
+					<div class = "framework_name">
+						강원도
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/korea.png">
+					<div class = "framework_name">
+						전라도
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/korea.png">
+					<div class = "framework_name">
+						경상도
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/korea.png">
+					<div class = "framework_name">
+						제주도
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class = "frameworks_country">
+				<div class = "frameworks_country_text">
+					Japan
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/japan.jpg">
+					<div class = "framework_name">
+						도쿄
+					</div>
+				</div>
+			
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/japan.jpg">
+					<div class = "framework_name">
+						교토
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/japan.jpg">
+					<div class = "framework_name">
+						삿포로
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/japan.jpg">
+					<div class = "framework_name">
+						요코하마
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class = "frameworks_country">
+				<div class = "frameworks_country_text">
+					China
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/china.jpg">
+					<div class = "framework_name">
+						베이징
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/china.jpg">
+					<div class = "framework_name">
+						상하이
+					</div>
+				</div>
+			
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/china.jpg">
+					<div class = "framework_name">
+						텐진
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/china.jpg">
+					<div class = "framework_name">
+						광저우
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/china.jpg">
+					<div class = "framework_name">
+						청도
+					</div>
+				</div>
+				<div class = "frameworks_background">
+					<img class = "framework_logo" src = "/img/china.jpg">
+					<div class = "framework_name">
+						난징
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class = "frameworks_preparing_country">
+				<div class = "frameworks_preparing_text">
+					Preparing...
+				</div>
+				<div class = "frameworks_preparing">
+					<div class = "prepare_text">준비 중 입니다.</div>
+					<img class = "framework_logo" src = "/img/china.jpg">
+					<div class = "framework_name">
+						하얼빈
+					</div>
+				</div>
+				<div class = "frameworks_preparing">
+					<div class = "prepare_text">준비 중 입니다.</div>
+					<img class = "framework_logo" src = "/img/america.gif">
+					<div class = "framework_name">
+						디트로이드
+					</div>
+				</div>
+				<div class = "frameworks_preparing">
+					<div class = "prepare_text">준비 중 입니다.</div>
+					<img class = "framework_logo" src = "/img/japan.jpg">
+					<div class = "framework_name">
+						후쿠오카
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+		<!-- footer -->
+	<footer class = "footer_desktop">
+		<div class = "footer_top container">
+			<div class = "footer_top_left">
+				<a class = "footer-agreements" target = "_blank" href = "#">이용약관</a>
+				<a class = "footer-privacy" target = "_black" href = "#">개인정보처리방침</a>
+			</div>
+		</div>
+		
+		<div class = "footer_divider"></div>
+		
+		<div class = "footer_bottom container">
+			<div class = "footer_bottom_left">
+				<a href = "#" target = "_blank">
+				<img class = "footer-fretrip-signature" src = "/img/logo.gif" alt = "FreTrip"></a>
+					
+				<div class = "footer-fretrip-info">
+					<div>
+						<span>상호 : </span>
+						<span>(주)FreTrip</span>&nbsp;&nbsp;&nbsp;&nbsp;
+						<span>대표 : </span>
+						<span>조 현 재</span>&nbsp;&nbsp;&nbsp;&nbsp;
+						<span>개인정보보호책임자 : </span>
+						<span>유 승 훈</span>
+					</div>
+					<div>
+						<span>서울 특별시 </span>
+						<span>광진구 </span>
+						<span>군자동 </span>
+						<span>116-9 </span> 
+						<span>FreTrip Ent</span>
+					</div>
+					<div>
+						<span>웹프로그래밍 </span>
+						<span>13011178 </span>
+						<span>조 현 재</span>
+					</div>
+					<div>
+						<span>TEL : </span>
+						<span>010-8941-5576 </span>&nbsp;&nbsp;&nbsp;&nbsp;
+						<span>Email : </span>
+						<a href = "#">guswo5580@naver.com</a>
+					</div>	
+				</div>		
+			</div>
+			
+			<div class = "footer_bottom_right">
+				<div class = "footer-fretrip-services">
+					<div class = "footer-fretrip-services_title">
+						FreTrip 서비스
+					</div>
+					
+					<ul class = "footer-fretrip-services_list">
+						<li><a href="#" target="_blank">
+							<img src="/img/logo2.gif" ></a></li>
+							
+						<li><a href="#" target="_blank">
+							<img src="/img/logo2-1.gif" ></a></li>
+							
+						<li><a href="#" target="_blank">
+								<img src="/img/logo2-2.gif"></a></li>
+					</ul>
+				</div>
+				<div class = "footer_rights">
+					ⓒ FreTrip Corp. All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+    <!-- popup -->
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Popup" style = "z-index : 10000; position : fixed; bottom : 0; right : 30px;
+																												   background-color : #008bf4; height : 50px; font-size : 1.8rem; text-align : center;">
+            	<i class = " fa fa-comments-o" style = "margin-right : 5px;"></i>문의하기
+    </button>
+
+    <div class="modal fade" id="Popup" tabindex="-1" role="dialog" aria-labelledby="ModalTitle"style = "margin-right : 10px;">
+		<div class="modal-dialog" role="contact_us">
+			<div class="modal-content">
+				<div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    	<h3 class="modal-title" id="ModalTitle" style = "padding : 10px; border-bottom : 1px solid gray;">언제든지 연락주세요!</h3>
+					<p style = "margin-top : 20px; line-height : inherit; font-size : 1.5rem">
+						FreTrip은 서비프의 품질 유지를 위해 다양한 환경을 기반으로 지원하고 있습니다. 시간과 장소에 관계없이 페이스북, 이메일로 연락 주십시오. 빠른 시간 내에 처리해 드리겠습니다.
+					</p><br>
+				</div>
+				
+                <div class="modal-body">
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-xs-3 control-label" for="contact_us_title">제목</label>
+							<div class="col-xs-8 input_container">
+								<input type="text" class="form-control" id="contact_us_title" placeholder="제목을 입력">
+							</div>
+						</div>
+						  
+						<div class="form-group loggined">
+							<label class="col-xs-3 control-label" for="contact_us_email" style="white-space: nowrap;">이메일</label>
+							<div class="col-xs-8 input_container">
+							<input type="text" class="form-control" id="contact_us_email" placeholder="이메일">
+						</div>
+				</div>
+							
+					<div class="form-group">
+						<label class="col-xs-3 control-label" for="contact_us_content">내용</label>
+						<div class="col-xs-8 input_container">
+							<textarea class="form-control" id="contact_us_content" placeholder="문의하실 내용" rows="3" style="resize: none;"></textarea>
+						</div>
+					</div>
+						
+					<div class="modal-footer">
+                    	<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    	<button type="button" class="btn btn-primary">보내기</button>
+                  	</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

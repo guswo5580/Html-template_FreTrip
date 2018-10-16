@@ -1,0 +1,124 @@
+#thema_main_image{
+	background-image : url('https://ide.goorm.io/images/main/header_bg_triangle.svg');
+	background-size : cover;
+	background-repeat : no-repeat;
+	background-color : rgb(43,50,62);
+	min-height : 485px;
+	margin-bottom : 50px;
+}
+
+.text1{
+	font-size: 3rem;
+	color: #ffffff;
+	line-height: 72px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+	display: inline-block;
+	text-align : left;
+	margin-top : 200px;
+}
+.text2{
+	font-size : 2.5rem;
+	color : #ffffff;
+	line-height : 40px;
+	padding-left : 10px;
+	padding-right : 10px;
+	font-weight : 400;
+	text-align : left;
+	margin-top : 20px;
+	display : inline-block;
+}
+.thema_main_texts img{
+	display : inline-block;
+	top : 200px;
+	margin-left : 10%;
+	margin-right : 40px;
+	position : absolute;
+	min-height : 200px;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.iframe_title{
+	margin-left : 5%;
+}
+.embed-responsive{
+	margin : 40px 70px 70px 70px;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.mg-avl-guides{
+	margin-bottom : 40px;
+}
+.row{
+	margin-bottom : 20px;
+}
+.row img{
+	margin-top : 20px;
+}
+.mg-avl-guides-title > span{
+	font-size : 3rem;
+	float : right;
+	color : blue;
+}
+.mg-avl-guides-title > a{
+	text-decoration : none;
+	font-size : 4rem;
+}
+.col-sm-7 > p{
+	font-size : 2rem;	
+	margin-bottom : 10px;
+}
+
+.col-sm-6 > ul{
+	list-style : none;
+	margin-left : -30px;
+	margin-top : 20px;
+}
+.col-sm-6 ul li{
+	margin-bottom : 5px;
+	font-size : 1.6rem;
+}
+
+.fa-send-o{
+	margin-right : 8px;
+}
+@media(max-width : 770px){
+	
+	#thema_main_image{
+		background-image : url('https://ide.goorm.io/images/main/header_bg_triangle.svg');
+		background-size : cover;
+		background-repeat : no-repeat;
+		background-color : rgb(43,50,62);
+		min-height : 400px;
+		margin-bottom : 30px;
+	}
+	.text1{
+		font-size: 2.3rem;
+		color: #ffffff;
+		line-height: 50px;
+		font-weight: bold;
+		display: inline-block;
+		text-align : left;
+		margin-top : 100px;
+	}
+	.text2{
+		font-size : 1.8rem;
+		color : #ffffff;
+		line-height : 30px;
+		font-weight : 300;
+		text-align : left;
+		margin-top : 20px;
+		display : inline-block;
+	}
+	.mg-avl-guides-title > span{
+		font-size : 1.5rem;
+		float : right;
+		color : blue;
+}
+	.mg-avl-guides-title > a{
+		text-decoration : none;
+		font-size : 2rem;
+}
+	.thema_main_texts img{
+		display : none;
+	}
+}

@@ -1,0 +1,188 @@
+#pricing_main_image{
+	background-image : url('https://ide.goorm.io/images/main/header_bg_triangle.svg');
+	background-size : cover;
+	background-repeat : no-repeat;
+	background-color : rgb(43,50,62);
+	min-height : 485px;
+	margin-bottom : 50px;
+}
+
+.text1{
+	font-size: 3rem;
+	color: #ffffff;
+	line-height: 72px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+	display: inline-block;
+	text-align : left;
+	margin-top : 200px;
+}
+.text2{
+	font-size : 2.5rem;
+	color : #ffffff;
+	line-height : 40px;
+	padding-left : 10px;
+	padding-right : 10px;
+	font-weight : 400;
+	text-align : left;
+	margin-top : 20px;
+	display : inline-block;
+}
+.pricing_main_texts img{
+	display : inline-block;
+	top : 200px;
+	margin-left : 20%;
+	margin-right : 40px;
+	position : absolute;
+	min-height : 200px;
+	/* padding-bottom : 80px; */
+}
+/* ////////////////////////////////////////////// */
+.pricing-header{
+	width : 80%;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+}
+.display{
+	font-weight : bold;
+	text-align : left;
+}
+.pricing-header p{
+	font-size : 2.5rem;
+	text-align : left;
+}
+/* ////////////////////////////////////////////// */
+.container_price{
+	width : 80%;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+}
+.price-deck{
+	display : inline-block;
+	width : 25%;
+	margin-left : 6%;
+	margin-top : 50px;
+	margin-bottom : 50px;
+	min-height : 400px;
+	border : 2px solid rgba(0,0,0,0.1);
+}
+.my-0{
+	font-size : 3.5rem;
+	font-weight : bold;
+	height : 60px;
+	margin-top : 0;
+	padding : 10px;
+	background-color : rgba(0,0,0,0.05);
+}
+/*/////////////////////////////////////////////////*/
+.price-title{
+	font-size : 3.2rem;
+	font-weight : bold;
+	margin-bottom : 30px;
+}
+.price-title .text-small{
+	font-size : 2.8rem;
+	font-weight : 100;
+	margin-left : 5px;
+	color : gray;
+}
+/*/////////////////////////////////////////////////*/
+.price-information{
+	font-size : 2rem;
+	line-height : 40px;
+}
+
+.list-unstyled{
+	width : 100%;
+	margin-top : 70px;
+}
+.fa-sun-o{
+	margin-right : 5px;
+}
+.list-unstyled li{
+	display : inline-block;
+	width : 48%;
+	text-align : left;
+	font-size : 1.6rem;
+}
+.sub_line{
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+.list-unstyled .line{
+	width : 100%;
+	display : block;
+	text-align : left;
+	font-size : 1.6rem;
+	margin-left : 1.3%;
+	margin-bottom : 5px;
+}
+.price-body .btn-primary{
+	margin-top :30px;
+}
+/* ////////////////////////////////////////////// */
+@media(min-width : 441px) and (max-width : 960px){
+	
+		#pricing_main_image{
+		min-height : 400px;
+		margin-bottom : 30px;
+	}
+	.text1{
+		font-size: 2.1rem;
+		line-height: 50px;
+		margin-top : 100px;
+	}
+	.text2{
+		font-size : 1.6rem;
+		line-height : 30px;
+		font-weight : 300;
+		margin-top : 20px;
+	}
+	.pricing_main_texts img{
+		display : none;
+	}
+/* /////////////////////////////////////////	 */
+	.price-deck{
+		display :block;
+		width : 60%;
+		margin-left : auto;
+		margin-right : auto;
+		margin-bottom : 70px;
+	}
+	.list-unstyled li{
+		text-align : left;
+		font-size : 1.8rem;
+	}
+		.list-unstyled .line{
+		font-size : 1.8rem;
+		margin-bottom : 5px;
+	}
+}
+@media(max-width : 440px){
+	.price-deck{
+		display :block;
+		width : 100%;
+		margin-left : auto;
+		margin-right : auto;
+		margin-bottom : 70px;
+	}
+	.list-unstyled li{
+		text-align : left;
+		font-size : 1.5rem;
+	}
+		.list-unstyled .line{
+		font-size : 1.5rem;
+		margin-bottom : 5px;
+	}
+	.pricing_main_texts img{
+		display : none;
+	}
+}
+
+
+
+
+

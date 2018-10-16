@@ -1,0 +1,34 @@
+
+.features-icons{
+	font-family : Lato, 'Helvetica Neue', Helvetica,Arial, sans-serif;
+}
+.features-icons{
+		padding-top : 7rem;
+		padding-bottom : 7rem;
+	}
+.features-icons .features-icons-item .features-icons-icon i{
+		font-size : 9rem;
+	}
+.features-icons .features-icons-item:hover .features-icons-icon i{
+		font-size : 12rem;
+	}
+	/*////////////////////////////////////////////////////*/
+@media (max-width: 770px){
+	.features-icons{
+		padding-top : 2rem;
+		padding-bottom : 4rem;
+	}
+	/* .features-icons .features-icons-item{
+		max-width : 20rem;
+	} */
+	.feautres-icons .features-icons-item .features-icons-icon{
+		height : 7rem;
+	}
+	.features-icons .features-icons-item .features-icons-icon i{
+		font-size : 4.5rem;
+	}
+	.features-icons .features-icons-item:hover .features-icons-icon i{
+		font-size : 5.5rem;
+	}
+	
+}

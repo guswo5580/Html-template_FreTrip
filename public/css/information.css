@@ -1,0 +1,139 @@
+.container-fluid{
+	margin-left : 0;
+}
+.information .information-text{
+	padding : 3rem;
+}
+.information .information-img{
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+}
+.information .information-img img{
+	width : 80%;
+	height : 80%;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+}
+.information .information-text h2{
+	font-weight : bold;
+	font-family : "Oswald";
+	margin-top : 40px;
+}
+.information .information-text .lead{
+	font-size : 2.3rem;
+	font-weight : 400;
+	line-height : 40px;
+	margin-top : 20px;
+}
+
+.information .information-text2{
+	padding : 3rem;
+}
+.information .information-text2 h2{
+	font-weight : bold;
+	font-family : "Oswald";
+	margin-top : 40px;
+	margin-left : 15%;
+}
+.information .information-text2 .lead{
+	font-size : 2.3rem;
+	font-weight : 400;
+	line-height : 40px;
+	margin-top : 20px;
+	margin-left : 15%;
+}
+#basic{
+	display : flex;
+
+}
+#basic > .information-img{
+	order : 1;	
+}
+#basic > .information-text{
+	order : 2;
+}
+
+#order{
+	display : flex;
+}
+#order>.information-text{
+	order : 1;
+}
+#order>.information-img{
+	order : 2;
+}
+/* 화면이 클 때는 이미지와 텍스트가 좌우 반전되어 나타나고 화면이 작아지면 순서가 바뀌어 위아래로 나타내기위해
+#order값을 flex로 나타내어 order값을 조정 */
+
+#order , #basic{
+	margin-bottom : 0;
+}
+@media(max-width : 1201px){
+	#order{
+		display : block;
+	}
+	#basic{
+		display : block;
+	}
+	.information .information-img img{
+		width : 60%;
+		height : 60%;
+		margin-left : auto;
+		margin-right : auto;
+	}
+	.information .information-text{
+		padding : 7rem;
+		margin-left : 15%;
+	}
+	.information .information-text h2{
+		font-size : 2rem;
+		font-weight : bold;
+	}
+	.information .information-text2{
+		padding : 7rem;
+	}
+	.information .information-text2 h2{
+		font-size : 2rem;
+		font-weight : bold;
+	}
+	
+}
+@media(max-width : 500px )
+{
+	
+	.information .information-img{
+		height : 50vh;
+	}
+	.information .information-text{
+		padding : 7rem;
+		margin-left : 5%;
+		margin-top : -200px;
+	}
+	.information .information-text h2{
+		font-size : 2rem;
+		font-weight : bold;
+	}
+	.information .information-text2{
+		padding : 7rem;
+		margin-top : -200px;
+	}
+	.information .information-text2 h2{
+		font-size : 2rem;
+		font-weight : bold;
+	}
+	.information .information-text .lead{
+		font-size : 1.5rem;
+		font-weight : 200;
+		line-height : 20px;
+		margin-top : 20px;
+	}
+	.information .information-text2 .lead{
+		font-size : 1.5rem;
+		font-weight : 400;
+		line-height : 20px;
+		margin-top : 20px;
+	}
+}
+

@@ -1,0 +1,13 @@
+.carousel-inner{
+	margin-bottom : 40px;
+}
+.carousel-caption  h2{
+	margin-bottom : 30px;
+}
+
+@media (max-width: 770px){
+	.carousel-caption  h2{
+		margin-bottom : 5px;
+		font-size : 1.8rem;
+	}
+}

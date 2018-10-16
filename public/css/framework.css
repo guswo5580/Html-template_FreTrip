@@ -1,0 +1,104 @@
+#main_frameworks{
+
+	padding-top : 60px;
+	padding-bottom : 60px;
+}
+#main_frameworks > .section_title{
+
+	margin-left : 15%;
+	font-size : 4rem;
+	font-weight : bold;
+	margin-bottom : 15px;
+}
+.frameworks_wrapper{
+	text-align : center;
+	width : 50%;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+}
+.frameworks_wrapper>.frameworks_country{
+	border : 2px solid black;
+}
+.frameworks_wrapper>.frameworks_country>.frameworks_country_text{
+	text-align : left;
+	font-size : 2rem;
+	font-weight : bold;
+	margin-left : 20px;
+	border-bottom : 1px solid gray;
+}
+.frameworks_wrapper>.frameworks_country>.frameworks_background{
+	display : inline-block;
+	padding : 10px 10px 10px 10px;
+	margin : 15px 15px 10px 30px;
+}
+
+.frameworks_wrapper>.frameworks_country>.frameworks_background>.framework_logo{
+	box-shadow : 3px 1px;
+}
+.frameworks_wrapper>.frameworks_country>.frameworks_background>.framework_name{
+	margin-top : 5px;
+	font-size : 1.5rem;
+	font-weight : bold;
+	box-shadow : 3px 1px;
+}
+
+.frameworks_wrapper >.frameworks_preparing_country{
+	border : 2px solid black;
+	margin-bottom : 20px;
+}
+.frameworks_wrapper >.frameworks_preparing_country>.frameworks_preparing_text{
+	text-align : left;
+	font-size : 2rem;
+	font-weight : bold;
+	margin-left : 20px;
+	border-bottom : 1px solid gray;
+}
+.frameworks_preparing{
+	display : inline-block;
+	padding : 10px 10px 10px 10px;
+	margin : 25px 25px 10px 30px;
+	text-align : center;
+	background-color : gray;
+	opacity : 0.5;
+}
+.frameworks_preparing >.prepare_text{
+	position : absolute;
+	display : block;
+	margin-top : 30px;
+	font-size : 1.5rem;
+	color : white;
+	font-weight : bold;
+}
+.frameworks_preparing .framework_logo{
+	box-shadow : 3px 1px;
+}
+.frameworks_preparing >.framework_name{
+	position : relative;
+	margin-top : 5px;
+	font-size : 1.5rem;
+	font-weight : bold;
+	box-shadow : 3px 1px;
+}
+@media(max-width : 1200px){
+	.frameworks_wrapper>.frameworks_country>.frameworks_background{
+		margin : 5px 5px 5px 5px;
+	}
+}
+@media(max-width : 770px){
+	.frameworks_wrapper{
+		width : 80%;
+	}
+	.frameworks_wrapper>.frameworks_contry>.frameworks_background{
+		margin : 5px 5px 5px 5px;
+	}
+	.frameworks_preparing{
+		margin : 5px 5px 5px 5px;
+	}
+	.section_title{
+		font-size : 2rem;
+	}
+	#main_frameworks > .section_title{
+		font-size : 3rem;
+	}
+}

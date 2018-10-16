@@ -1,0 +1,142 @@
+.footer_desktop{
+	display : block;
+}
+
+footer {
+	background-color : #3d485c;
+}
+
+footer a, footer a:focus, footer a:hover, footer a:visited{
+	text-decoration : none;
+}
+
+.footer-agreements, .footer-privacy{
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 72px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #ffffff;
+	font-weight: 300;
+	display: inline-block;
+}
+
+.footer-agreements:hover, .footer-agreements:active, .footer-agreements:focus, .footer-agreements:visited, .footer-privacy:hover, .footer-privacy:active, .footer-agreements:focus, .footer-agreements:visited {
+	color : #ffffff;
+}
+
+.footer_divider{
+	height : 1px;
+	width : 100%;
+	background-color : #2d3645;
+}
+
+.footer_bottom{
+	display : flex;
+	padding : 15px 15px 15px 15px;
+}
+.footer_bottom_left{
+	flex-basis : 70%;
+}
+.footer_bottom_right{
+	flex-basis : 30%;
+}
+.footer-fretrip-signature{
+	display : block;
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+.footer-fretrip-info{
+	text-align : left;
+	font-size : 1.8rem;
+	color : #dfe3e9;
+	margin-top : 10px;
+	line-height : 35px;
+	font-weight : 300;
+	word-break : keep-all;
+	/* 문자 강제 줄바꿈 */
+}
+.footer-fretrip-info a{
+	color : inherit;
+}
+
+.footer_bottom_right .footer-fretrip-services .footer-fretrip-services_title{
+	text-align : center;
+	font-size : 2rem;
+	color : #dfe3e9;
+	font-weight : 500;
+	margin-bottom : 20px;
+}
+
+.footer_bottom_right .footer-fretrip-services .footer-fretrip-services_list{
+	list-style : none;
+	left : 0;
+}
+.footer_bottom_right .footer-fretrip-services .footer-fretrip-services_list li img{
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+	margin-bottom : 10px;
+}
+
+.footer_rights{
+	text-align : center;
+	font-size : 1.5rem;
+	color : #dfe3e9;
+	margin-top : 30px;
+	font-weight : 400;
+}
+
+@media (min-width : 440px) and (max-width : 770px){
+	.footer_bottom{
+		display : flex;
+		flex-direction : column;
+	}
+	.footer-fretrip-signature{
+		display : block;
+		margin-left : auto;
+		margin-right : auto;
+	}
+	.footer-fretrip-info{
+		text-align : center;
+		font-size : 1.3rem;
+		color : #dfe3e9;
+		margin-top : 10px;
+		line-height : 30px;
+		font-weight : 300;
+		word-break : keep-all;
+	}
+	.footer_bottom_right .footer-fretrip-services .footer-fretrip-services_title{
+		margin-top : 15px;
+	}
+	.footer_bottom_right .footer-fretrip-services .footer-fretrip-services_list li img{
+		margin-left : 30px;
+		margin-right : 30px;
+	}
+}
+@media(max-width : 440px){
+	.footer_bottom{
+		display : flex;
+		flex-direction : column;
+	}
+	.footer-fretrip-signature{
+		display : block;
+		margin-left : auto;
+		margin-right : auto;
+	}
+	.footer-fretrip-info{
+		text-align : center;
+		font-size : 1.2rem;
+		color : #dfe3e9;
+		margin-top : 10px;
+		line-height : 30px;
+		font-weight : 300;
+		word-break : keep-all;
+	}
+	.footer_bottom_right .footer-fretrip-services .footer-fretrip-services_title{
+		margin-top : 15px;
+	}
+	.footer_bottom_right .footer-fretrip-services .footer-fretrip-services_list li img{
+		margin-left : 45px;
+		margin-right : 30px;
+	}

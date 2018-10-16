@@ -1,0 +1,241 @@
+nav~section{
+	margin-top : 70px;
+}
+#thema_main_image{
+	background-image : url('https://ide.goorm.io/images/main/header_bg_triangle.svg');
+	background-size : cover;
+	background-repeat : no-repeat;
+	background-color : rgb(43,50,62);
+	min-height : 380px;
+	margin-bottom : 50px;
+}
+.text1{
+	font-size: 3rem;
+	color: #ffffff;
+	line-height: 72px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+	display: inline-block;
+	text-align : left;
+	margin-top : 100px;
+}
+.text2{
+	font-size : 2.5rem;
+	color : #ffffff;
+	line-height : 40px;
+	padding-left : 10px;
+	padding-right : 10px;
+	font-weight : 400;
+	text-align : left;
+	margin-top : 20px;
+	display : inline-block;
+}
+
+/* /////////////////////////////////////////////////////// */
+.container_checkout{
+	width : 100%;
+	margin-left : 10px;
+	margin-bottom : 40px;
+	display : inline-block;
+}
+.form-wrap-left{
+	width : 48%;
+	padding : 10px;
+	display : inline-block;
+	border : 1px solid rgba(0,0,0,0.2);
+}
+.section_title{
+	font-size : 2rem;
+	font-family : "Oswald";
+	margin-bottom : 10px;
+	width : 80%;
+	display : inline-block;
+}
+/* /////////////////////////////////////////// */
+.first_section{
+	display : inline-block;
+	width : 47%;
+}
+
+.form-group .form-control{
+	width : 100%;
+	display : inline-block;
+	margin-left : -1px;
+	padding : 1px 1px 1px 1px;
+}
+
+/* //////////////////////////////////////////////// */
+.second_section{
+	display : inline-block;
+	width : 100%;
+}
+.second_section .form-control{
+	width : 47%;
+	display : inline-block;
+}
+#confirm{
+	width : 20%;
+	display : inline-block;
+	font-size : 1.4rem;
+	text-align : center;
+	margin-left : 10px;
+}
+/* //////////////////////////////////////////////// */
+.divided{
+	width : 90%;
+	border : 0.6px solid rgba(0,0,0,0.1);
+	margin-top : 0;
+}
+/* //////////////////////////////////////////////// */
+.callendar_title{
+	font-size : 1.7rem;
+	font-family : "Oswald";
+	width : 80%;
+	display : inline-block;
+}
+.callendar_section{
+	display : inline-block;
+	width : 47%;
+}
+#date_from{
+	width : 70%;
+}
+#date_to{
+	width : 70%;
+}
+/* //////////////////////////////////////////////////////////// */
+.first_section select{
+	width : 70%;
+	min-height : 30px;
+	font-size : 1.5rem;
+}
+/* ////////////////////////////////////////////////////////////////// */
+.relation{
+	text-align : center;
+	font-size : 2rem;
+	font-weight : bold;
+	font-family : "Oswald";
+	margin-top : 10px;
+}
+.sub_relation{
+	text-align : center;
+	font-size : 1.8rem;
+	font-weight : bold;
+	font-family : "Oswald";
+	margin-top : 10px;
+	margin-bottom : 20px;
+}
+.relation_title{
+	margin-left : 10px;
+	margin-right : 20px;
+}
+.find_relation a{
+	font-size : 3rem;
+	text-decoration : none;
+	color : aqua;
+}
+.text_submit{
+	width : 60%;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 30px;
+	margin-bottom : 30px;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+.form-wrap-right{
+	width : 48%;
+	display : inline-block;
+	position : absolute;
+	margin-left : 20px;
+}
+banner{
+	margin-bottom : 20px;
+}
+.slide ul {
+    margin : 0;
+    padding : 0;
+}
+.slide img {
+    display : block;
+    border : 0;
+	z-index : 3;
+	margin-bottom : 30px;
+}
+.slide button {
+    border : 0;
+    background : none;
+}
+.slide {
+	width : 600px;
+	overflow: hidden;
+	margin : 0 auto;
+	position: relative;
+}
+.slide ul{
+	width :1800px;
+	list-style: none;
+	font-size :0;
+}
+.slide ul li{
+	display : inline-block;
+}
+.slide button.prev{
+	position: absolute;
+	left : 0;
+	top : 150px;
+}
+.slide button.next{
+	position: absolute;
+	right: 0;
+	top : 150px;
+}
+.embed-responsive{
+	margin : 40px 20px 20px 20px;
+}
+/*////////////////////////////////////////////////////*/
+@media(max-width : 440px){
+	nav~section{
+		margin-top : 50px;
+	}
+	.form-wrap-left{
+		width : 100%;
+		display : block;
+	}
+	.container_checkout{
+		margin-left : 0;
+	}
+	.form-wrap-left{
+		border : none;
+	}
+	.form-wrap-right{
+		width : 100%;
+		display : block;
+		margin-left : 0;
+		position : relative;
+	}
+	.section_title{
+		font-size : 1.5rem;
+		font-weight : bold;
+	}
+	#confirm{
+		font-size : 1.1rem;
+	}
+	.relation_title{
+		display : block;
+		font-size : 1.5rem;
+	}
+	banner{
+		display : none;
+	}
+	.text1{
+		font-size: 2.3rem;
+		line-height: 50px;
+		margin-top : 100px;
+	}
+	.text2{
+		font-size : 1.8rem;
+		line-height : 30px;
+	}
+}

@@ -1,0 +1,212 @@
+nav~section{
+	margin-top : 120px;
+}
+/*/////////////////////////////////////////////////*/
+.container_login{
+	width : 30%;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+}
+/*/////////////////////////////////////////////////*/
+.signin-title{
+	text-align : center;
+	font-size : 3rem;
+	color : #333333;
+	margin-top : 40px;
+	margin-bottom : 40px;
+}
+
+.form-wrap > .form-group{
+	width : 90%;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+}
+.form-wrap > .form-group >.form-control{
+	font-family: "Oswald";
+	margin-left : -1px;
+	margin-bottom : 15px;
+	height : 50px;
+}
+#btn-login{
+	width : 90%;
+	border-radius : 0;
+	font-size : 2rem;
+	padding : 12.5px;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+	margin-bottom : 12px;
+}
+.form-footer{
+	margin-top : 30px;
+	margin-bottom : 100px;
+}
+/* //////////////////////////////////////////////////////////////////// */
+
+.find_pw{
+	margin-left : 10%;
+	text-decoration : none;
+	color : black;
+	font-size : 1.5rem;
+	font-weight : bold;
+}
+.signup{
+	margin-left : 35%;
+	text-decoration : none;
+	color : black;
+	font-size : 1.5rem;
+	font-weight : bold;
+}
+.agreement{
+	text-align : right;
+}
+.agreement a{
+	text-decoration : none;
+	font-size : 1.6rem;
+	color : black;
+	margin-right : 20%;
+}
+.checkbox_email{
+	margin-top : 20px;
+	margin-bottom : 20px;
+	margin-left : 5%;
+}
+.checkbox_email label{
+	font-size : 1.6rem;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.social_title{
+	font-size : 1.5rem;
+	color : black;
+	font-weight : bold;
+	margin-bottom : 30px;
+	margin-left : 5%;
+}
+.social_btn{
+	width : 174px;
+	margin-bottom : 5px;
+	margin-left : 10%;
+}
+#facebook_login{
+	background-image : url('../img/facebook.jpg');
+	width : 174px;
+	padding : 10px;
+}
+#google_login{
+	background-image : url('../img/google.jpg');
+	width : 174px;
+	padding : 10px;
+}
+#naver_login{
+	background-image : url('../img/naver.jpg');
+	width : 174px;
+	padding : 10px;
+}
+#github_login{
+	background-image : url('../img/github.jpg');
+	width : 174px;
+	padding : 10px;
+}
+.social_btn_label{
+	text-align : center;
+	margin-top : 5px;
+	margin-left : 20%;
+	color : white;
+	font-size : 1.5rem;
+	font-weight : bold;
+}
+#google_login > .social_btn_label{
+	color : gray;
+}
+/* ///////////////////////////////////////////////////////////////// */
+
+.form-footer{
+	text-align : center;
+}
+.form-footer a{
+	margin-left : -2px;
+}
+@media(min-width : 1601px){
+	.social_wrap{
+		margin-left : 6%;
+	}
+	
+}
+@media(min-width : 901px) and (max-width : 1400px){
+	
+}
+@media (min-width : 401px) and (max-width : 900px){
+	.form-wrap > .form-group{
+		width : 100%;
+	}
+	.form-wrap > .form-group > .form-control{
+		width : 100%;
+	}
+	#btn-login{
+		width : 100%;
+	}
+	.checkbox_email{
+		margin-left : 0;
+	}
+	.checkbox_email label{
+		font-size : 1.1rem;
+	}
+	.agreement a{
+		font-size : 1.1rem;
+	}
+	.social_title{
+		margin-left : 0;
+	}
+	.social_btn{
+		margin-left : 0;
+	}
+	#facebook_login{
+		width : 90px;
+	}
+	#google_login{
+		width : 90px;
+	}
+	#naver_login{
+		width : 90px;
+	}
+	#github_login{
+		width : 90px;
+	}
+	.social_btn_label{
+		text-align : center;
+		margin-left : 30%;
+		font-size : 1.3rem;
+	}
+
+}
+@media(max-width : 400px){
+	.container_login{
+		width : 70%;	
+	}
+	.form-wrap > .form-group{
+		width : 100%;
+	}
+	.form-wrap > .form-group >.form-control{
+		width : 100%;
+	}
+	#facebook_login{
+		width : 100px;
+	}
+	#google_login{
+		width : 100px;
+	}
+	#naver_login{
+		width : 100px;
+	}
+	#github_login{
+		width : 100px;
+	}
+	.social_btn_label{
+		margin-left : 50%;
+		font-size : 1.1rem;
+	}
+}
+

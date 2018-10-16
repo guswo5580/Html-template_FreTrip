@@ -1,0 +1,133 @@
+.navbar-default1 {
+	background-color: rgba(0,0,0,0.51);
+  	border-color: rgba(0,0,0,0.51);
+}
+.container-fluid{
+	padding : 10px;
+	margin-left : 30px;
+}
+/*/////////////////////////////////////////////////*/
+.navbar-toggle .collapsed{
+	margin-right : 30px;
+	margin-left : 10px;
+}
+.navbar-default1 .navbar-brand {
+  	color: #ecf0f1;
+	margin-left : 10px;
+}
+
+.navbar-default1 .navbar-brand:hover,
+.navbar-default1 .navbar-brand:focus {
+  	color: #ecdbff;
+}
+/*/////////////////////////////////////////////////*/
+.navbar-default1 .navbar-text {
+  	color: #ecf0f1;
+}
+.navbar-default1 .navbar-nav > li > a {
+  	color: #ecf0f1;
+}
+.navbar-default1 .navbar-nav > li > a:hover,
+.navbar-default1 .navbar-nav > li > a:focus {
+  	color: #ecdbff;
+}
+/*/////////////////////////////////////////////////*/
+.action {
+	margin-left : 20px;
+}
+.dropdown-toggle{
+	margin-left : 20px;
+}
+/*/////////////////////////////////////////////////*/
+.form-control{
+	margin-left : 30px;
+}
+/*/////////////////////////////////////////////////*/
+.dropdown-menu{
+	background-color : rgba(0,0,0,0.51);
+}
+.dropdown-menu >li > a{
+	color: #ecf0f1;
+}
+.dropdown-menu > li > a:hover{
+	background-color : white;
+	opacity : 0.6;
+}
+/*/////////////////////////////////////////////////*/
+.navbar-default1 .navbar-nav > .open > a,
+.navbar-default1 .navbar-nav > .open > a:hover,
+.navbar-default1 .navbar-nav > .open > a:focus {
+  	color: #ecdbff;
+  	background-color: green;
+	opacity : 0.6;
+}
+/* navigation bar가 scrolling 되었을 때 환경을 다시 조정해준다 */
+.navbar-default1 .navbar-toggle {
+  	border-color: #8e44ad;
+}
+.navbar-default1 .navbar-toggle:hover,
+.navbar-default1 .navbar-toggle:focus {
+  	background-color: #8e44ad;
+}
+.navbar-default1 .navbar-toggle .icon-bar {
+  	background-color: #ecf0f1;
+}
+.navbar-default1 .navbar-collapse, .navbar-default1 .navbar-form {
+  	border-color: #ecf0f1;
+}
+/* 반응형이 접목되어 toggle버튼이 생성되었을 때 환경을 다시 맞춰 준다 */
+.navbar-default1 .navbar-link {
+  	color: #ecf0f1;
+}
+.navbar-default1 .navbar-link:hover {
+  	color: #ecdbff;
+}
+.navbar-right > li > a{
+	margin-right : 30px;
+}
+.glyphicon{
+	margin-right : 5px;
+}
+/* ///////////////////////////////////////////////////////////// */
+@media (max-width: 770px) {
+	.navbar-default1 .navbar-nav .open .dropdown-menu > li > a {
+		color: #ecf0f1;
+	}
+  	.navbar-default1 .navbar-nav .open .dropdown-menu > li > a:hover,
+  	.navbar-default1 .navbar-nav .open .dropdown-menu > li > a:focus {
+    	color: #ecdbff;
+  	}
+  	.navbar-default1 .navbar-nav .open .dropdown-menu > .active > a,
+  	.navbar-default1 .navbar-nav .open .dropdown-menu > .active > a:hover,
+  	.navbar-default1 .navbar-nav .open .dropdown-menu > .active > a:focus {
+    	color: #ecdbff;
+    	background-color: #8e44ad;
+  	}
+	#defaultNavbar1{
+		margin-left : 10px;
+	}
+	.navbar-brand{
+		margin-left : 10px;
+	}
+	.container-fluid{
+		padding : 0;
+	}
+	.navbar-header button{
+		margin-right : 40px;
+	}
+	.action {
+		margin-left : 10px;
+	}
+	.dropdown-toggle{
+		margin-left : 0;
+	}
+	.form-control{
+		margin-left : 0;
+		width : 80%;
+	}
+	.col-lg-4{
+		border-bottom : 1px solid #ecdbff;
+		margin-bottom : 20px;
+	}
+	
+}
